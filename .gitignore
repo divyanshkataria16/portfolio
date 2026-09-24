@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# Local snapshots of earlier design iterations — working scratch, not the site
+.backup/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*

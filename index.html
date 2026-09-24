@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divyansh Kataria — AI Marketing Consultant &amp; Founder, Sparqera</title>
+<meta name="description" content="Divyansh Kataria — Founder at Sparqera. AI-powered marketing systems, performance marketing, AI search optimization, and high-converting digital experiences.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<!-- LIVING BACKGROUND: WebGL aurora field (fades + halts past the hero) -->
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+<div class="bg-fallback" aria-hidden="true"></div>
+
+<!-- OPENING TITLE SEQUENCE -->
+<div id="loader">
+  <div class="loader-panel"></div>
+  <div class="loader-panel"></div>
+  <div class="loader-panel"></div>
+  <div class="loader-content">
+    <div class="loader-tag">A career in motion — presented by Sparqera</div>
+    <div class="loader-name-mask"><div id="loaderName" class="display">DIVYANSH KATARIA</div></div>
+    <div class="loader-bottom">
+      <div id="loaderCount">000</div>
+      <div class="loader-bar-track"><div id="loaderBar"></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-outer" id="navOuter">
+  <div class="nav">
+    <div class="avatar"><img src="assets/photo-circle.png" alt="Divyansh Kataria"></div>
+    <div class="status"><span class="dot"></span> Available for work</div>
+    <div class="menu-btn" id="menuBtn">≡</div>
+  </div>
+</div>
+<div class="menu-panel" id="menuPanel">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Work</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-inner" style="display:flex;flex-direction:column;align-items:center;">
+    <div class="hero-name">Divyansh Kataria</div>
+    <div class="hero-title display">
+      <span class="line"><span class="line-inner serif">AI</span></span>
+      <!-- Three nested elements on purpose: the ambient float is a CSS
+           keyframe (compositor-driven, free), while GSAP owns the entrance
+           sweep and scroll parallax. A CSS animation on `transform` beats
+           inline styles, so they must not share a node. -->
+      <div class="hero-photo-float">
+        <div class="hero-photo">
+          <img src="assets/photo-hero.jpg" alt="Divyansh Kataria portrait">
+          <div class="hi-bubble-pop">
+            <div class="hi-bubble">
+              <span class="swap-item swap-a">Hi</span>
+              <span class="swap-item swap-b"><span class="wave wave-black">👋</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="line"><span class="line-inner">MARKETING</span></span>
+    </div>
+    <p class="hero-tagline">I build AI-powered marketing systems that help businesses grow through intelligent automation, performance marketing, AI Search Optimization, and high-converting digital experiences.</p>
+
+    <div class="hero-bottom">
+      <a href="#contact" class="btn">Let's Talk <span class="arrow">↗</span></a>
+      <div class="made-in">Founder · Sparqera</div>
+    </div>
+
+    <a href="#services" class="circle-badge hero-badge" aria-label="Scroll to services">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="badgeCircle" d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"/></defs>
+        <text class="badge-text"><textPath href="#badgeCircle" textLength="276" lengthAdjust="spacing">SCROLL THE JOURNEY&#160;•&#160;DIVYANSH KATARIA&#160;•</textPath></text>
+      </svg>
+      <span class="badge-core">↓</span>
+    </a>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span>AI Marketing Strategy</span><span>Performance Marketing</span><span>Search Optimization</span>
+    <span>Website Development</span><span>AI Automation</span><span>Branding &amp; Content</span>
+    <span>AI Marketing Strategy</span><span>Performance Marketing</span><span>Search Optimization</span>
+    <span>Website Development</span><span>AI Automation</span><span>Branding &amp; Content</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 01 · The Craft</div>
+      <h2 class="display">Services</h2>
+      <p>As an AI marketing consultant and product builder, I help businesses grow through intelligent systems — combining technical execution with modern performance marketing.</p>
+    </div>
+
+    <div class="services-list">
+      <div class="service-row reveal">
+        <div class="num">01</div>
+        <div><h3>AI Marketing Strategy</h3>
+          <p class="desc">Helping businesses leverage AI to automate marketing and improve customer acquisition.</p>
+        </div>
+        <div class="tags"><span>AI Marketing</span><span>Automation</span><span>Growth Strategy</span></div>
+      </div>
+      <div class="service-row reveal">
+        <div class="num">02</div>
+        <div><h3>Performance Marketing</h3></div>
+        <div class="tags"><span>Meta Ads</span><span>Google Ads</span><span>Lead Generation</span><span>Conversion Optimization</span><span>Landing Pages</span><span>Campaign Strategy</span></div>
+      </div>
+      <div class="service-row reveal">
+        <div class="num">03</div>
+        <div><h3>Search Optimization</h3></div>
+        <div class="tags"><span>SEO</span><span>AEO</span><span>GEO</span><span>AI Search Optimization</span><span>Technical SEO</span><span>Content Strategy</span></div>
+      </div>
+      <div class="service-row reveal">
+        <div class="num">04</div>
+        <div><h3>Website Development</h3></div>
+        <div class="tags"><span>Business Websites</span><span>Landing Pages</span><span>WordPress</span><span>Framer</span><span>Responsive Design</span><span>Conversion Optimization</span></div>
+      </div>
+      <div class="service-row reveal">
+        <div class="num">05</div>
+        <div><h3>AI Automation</h3></div>
+        <div class="tags"><span>Marketing Automation</span><span>AI Workflows</span><span>CRM Automation</span><span>Lead Automation</span><span>AI Agents</span><span>Process Automation</span></div>
+      </div>
+      <div class="service-row reveal">
+        <div class="num">06</div>
+        <div><h3>Branding &amp; Content</h3></div>
+        <div class="tags"><span>Brand Strategy</span><span>Social Media</span><span>Creative Direction</span><span>Video Content</span><span>Copywriting</span><span>Content Marketing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photo reveal"><img src="assets/photo-hero.jpg" alt="Divyansh Kataria"></div>
+    <div class="about-copy reveal">
+      <div class="eyebrow">Chapter 02 · Origin Story</div>
+      <h2 class="display" style="font-size:clamp(28px,3.4vw,44px);letter-spacing:-.035em;margin-bottom:26px;line-height:1;">Founder <span class="serif">&amp;</span> AI Marketing Consultant</h2>
+      <p>I'm Divyansh Kataria, founder of <span class="highlight">Sparqera</span>, an AI-first marketing consultancy focused on helping businesses grow through intelligent marketing systems instead of traditional marketing services.</p>
+      <p>With a background in Computer Science and professional experience in both corporate technology and digital marketing, I combine technical expertise with modern marketing strategies to solve complex business problems. My work spans AI Search Optimization, SEO, Performance Marketing, Website Development, Marketing Automation, Content Systems, and AI-powered workflows.</p>
+      <p>Beyond client work, I enjoy building AI products that automate repetitive marketing processes and help businesses scale more efficiently. My goal is to build software and systems that reduce manual work while improving marketing performance.</p>
+
+      <div class="stats reveal-stagger">
+        <div class="stat"><b data-count="2" data-suffix="+">0</b><span>Years Experience</span></div>
+        <div class="stat"><b data-count="3">0</b><span>AI Products</span></div>
+        <div class="stat"><b data-count="5" data-suffix="+">0</b><span>Client Brands</span></div>
+        <div class="stat"><b data-count="100" data-suffix="+">0</b><span>Marketing Assets</span></div>
+        <div class="stat"><b data-count="20" data-suffix="+">0</b><span>AI Workflows Built</span></div>
+        <div class="stat"><b style="font-size:22px;">India &amp; US</b><span>Countries Worked With</span></div>
+      </div>
+
+      <div class="contact-mini">
+        <div><span>Call Today</span><b>+91 98123 05772</b></div>
+        <div><span>Email</span><b>anshkataria525@gmail.com</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 03 · The Journey</div>
+      <h2 class="display">Experience</h2>
+    </div>
+    <div class="exp-wrap">
+      <div class="exp-line"></div>
+      <div class="exp-item">
+        <div class="period">Nov 2024 — Feb 2025</div>
+        <div><h3>GlobalLogic Technologies</h3><div class="role">Associate Analyst</div>
+          <p>Worked in a corporate technology environment, collaborating across enterprise workflows and developing strong analytical, technical, and problem-solving skills — the foundation for my transition into AI-driven marketing and product development.</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="period">2025 — Present</div>
+        <div><h3>Sparqera</h3><div class="role">Founder &amp; AI Marketing Consultant</div>
+          <p>Founded Sparqera to help businesses grow using AI-first marketing strategies. Leading product development, client strategy, AI automation, website development, SEO, AI Search Optimization, performance marketing, and content systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / CLIENT WORK -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 04 · Client Stories</div>
+      <h2 class="display" data-serif="1">Client Work</h2>
+      <p>Selected engagements where I led marketing strategy, branding, and performance across industries — one story at a time.</p>
+    </div>
+    <div class="projects-stack">
+      <div class="project-panel">
+        <div class="project-card">
+          <div class="proj-index">01 / 04</div>
+          <div class="thumb"><img src="assets/work-gweal.jpg" alt="G-Weal Consultants — luxury real estate brand artwork"></div>
+          <div class="cat">Luxury Real Estate Consulting</div>
+          <h3>G-Weal Consultants</h3>
+          <p>Brand strategy, performance marketing, and premium creative direction for a luxury real estate consultancy.</p>
+          <div class="tags"><span>Brand Strategy</span><span>Meta Ads</span><span>Brochures</span><span>Website Consultation</span></div>
+        </div>
+      </div>
+      <div class="project-panel">
+        <div class="project-card">
+          <div class="proj-index">02 / 04</div>
+          <div class="thumb"><img src="assets/work-lhs.jpg" alt="LHS Interiors — interior design brand artwork"></div>
+          <div class="cat">Interior Design Studio</div>
+          <h3>LHS Interiors</h3>
+          <p>Social strategy and content system built around Instagram growth — reels, short-form video, and consistent brand storytelling.</p>
+          <div class="tags"><span>Instagram Management</span><span>Reels Strategy</span><span>Content Planning</span></div>
+        </div>
+      </div>
+      <div class="project-panel">
+        <div class="project-card">
+          <div class="proj-index">03 / 04</div>
+          <div class="thumb"><img src="assets/work-lifestyle.jpg" alt="Lifestyle — fashion retail brand artwork"></div>
+          <div class="cat">Fashion Retail</div>
+          <h3>Lifestyle</h3>
+          <p>Creative design and promotional campaign system driving social engagement and digital marketing for a fashion retail brand.</p>
+          <div class="tags"><span>Social Media Marketing</span><span>Creative Design</span><span>Branding Assets</span></div>
+        </div>
+      </div>
+      <div class="project-panel">
+        <div class="project-card">
+          <div class="proj-index">04 / 04</div>
+          <div class="thumb"><img src="assets/work-tasty.jpg" alt="Tasty Trails — food brand artwork"></div>
+          <div class="cat">Food Brand</div>
+          <h3>Tasty Trails</h3>
+          <p>Brand identity and menu design paired with promotional creatives and digital branding for a growing food brand.</p>
+          <div class="tags"><span>Brand Identity</span><span>Menu Design</span><span>Digital Branding</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:50px;">
+      <a href="#contact" class="btn outline">Start a Project <span class="arrow" style="background:transparent;color:inherit;">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 05 · Building Products</div>
+      <h2 class="display" data-serif="1">Built by Me</h2>
+      <p>Software I've built to automate repetitive marketing work and give businesses AI-powered leverage.</p>
+    </div>
+    <div class="featured-product reveal">
+      <div class="feat-visual">
+        <img class="feat-visual-bg" src="assets/prod-viraliq.jpg" alt="OLISSO — AI growth intelligence network artwork">
+        <svg class="feat-ring" viewBox="0 0 200 200">
+          <defs>
+            <linearGradient id="featGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#A8C4FF"/>
+              <stop offset="55%" stop-color="#4D7CFF"/>
+              <stop offset="100%" stop-color="#2E5BFF"/>
+            </linearGradient>
+          </defs>
+          <circle class="ring-track" cx="100" cy="100" r="84"/>
+          <circle class="ring-fill" cx="100" cy="100" r="84"/>
+        </svg>
+        <div class="feat-ring-label"><b data-count="87">0</b><span>Growth Score</span></div>
+        <div class="feat-chip c1">Hook Analysis</div>
+        <div class="feat-chip c2">Competitor Intel</div>
+        <div class="feat-chip c3">Trend Signals</div>
+        <div class="feat-chip c4">Brand DNA</div>
+      </div>
+      <div class="feat-content">
+        <div class="feat-live"><span class="dot"></span> Live Product</div>
+        <span class="tag">Flagship Product</span>
+        <h3 class="feat-title display">OLISSO</h3>
+        <div class="feat-sub">AI Growth Intelligence — formerly ViralIQ</div>
+        <p>OLISSO studies any Instagram account like an elite growth strategist and tells you exactly why it is — or isn't — growing, and what to do next. A deterministic scoring engine works alongside 15+ specialized AI agents — competitor benchmarking, hook analysis, audience psychology, trend opportunity, brand intelligence — to turn raw Instagram data into an honest, evidence-backed growth report. Beyond the diagnosis, OLISSO becomes a full day-to-day Growth OS: a content planner and AI content studio, a link-in-bio builder, and a creator brand profile that sharpens with every analysis.</p>
+        <div class="feat-stats">
+          <div class="feat-stat"><b data-count="15" data-suffix="+">0</b><span>AI Agents</span></div>
+          <div class="feat-stat"><b data-count="100" data-suffix="%">0</b><span>Real Instagram Data</span></div>
+          <div class="feat-stat"><b style="font-size:20px;">Full Growth OS</b><span>Planner · Studio · Bio Page</span></div>
+        </div>
+        <ul><li>Instagram Growth Analysis</li><li>Competitor Benchmarking</li><li>AI Content Studio</li><li>Content Planner</li><li>Link-in-Bio Builder</li><li>Creator Brand Profile</li></ul>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="prod-art"><img src="assets/prod-auditos.jpg" alt="Audit OS — AI website audit radar artwork"></div>
+        <span class="tag">AI Website Intelligence</span>
+        <h3>Audit OS</h3>
+        <div class="sub">Full website audit &amp; growth report</div>
+        <p>An AI-powered platform that performs a complete audit of any business website and generates an in-depth report with actionable recommendations.</p>
+        <ul><li>Technical SEO Audit</li><li>Performance Analysis</li><li>UI/UX Review</li><li>AI Search Readiness</li><li>GEO / AEO Optimization</li><li>Competitor Insights</li></ul>
+      </div>
+      <div class="product-card reveal">
+        <div class="prod-art"><img src="assets/prod-contentos.jpg" alt="AI Content OS — autonomous content engine artwork"></div>
+        <span class="tag">Autonomous Content Engine</span>
+        <h3>AI Content OS</h3>
+        <div class="sub">Title → publish-ready article</div>
+        <p>A fully automated content engine that transforms a single blog title into a publication-ready article — research, SEO, writing, and formatting included.</p>
+        <ul><li>Topic &amp; Keyword Research</li><li>SEO / AEO / GEO Planning</li><li>Blog Writing</li><li>Meta Title &amp; Description</li><li>FAQ &amp; Schema Generation</li><li>Featured Image Prompt</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 06 · The Arsenal</div>
+      <h2 class="display">Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Marketing</h3>
+        <ul><li>AI Marketing</li><li>Performance Marketing</li><li>SEO / AEO / GEO</li><li>Google Ads</li><li>Meta Ads</li><li>Analytics</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Technology</h3>
+        <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL</li><li>WordPress</li><li>Framer</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>AI</h3>
+        <ul><li>Claude</li><li>ChatGPT</li><li>Prompt Engineering</li><li>AI Automation</li><li>AI Agents</li><li>Workflow Design</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Creative</h3>
+        <ul><li>Canva</li><li>Branding</li><li>UI Thinking</li><li>Copywriting</li><li>Content Strategy</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Chapter 07 · Questions</div>
+      <h2 class="display">FAQ</h2>
+      <p>If you don't see your question here, feel free to reach out — I'm happy to help.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">01</span> What services do you offer? <span class="plus">+</span></div>
+        <div class="faq-a"><p>AI marketing strategy, performance marketing (Meta &amp; Google Ads), SEO / AEO / GEO, website development, AI automation, and branding &amp; content.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">02</span> How does the process work? <span class="plus">+</span></div>
+        <div class="faq-a"><p>We start with a discovery call to understand your goals, followed by a strategy proposal, then execution with regular check-ins and reporting.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">03</span> How long does a project usually take? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Depends on scope — landing pages and audits can take 1-2 weeks, while full marketing systems or AI automation builds run 4-8 weeks.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">04</span> What do I need to provide? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Brand assets, access to relevant ad/analytics accounts, and a clear picture of your goals — I'll guide you through the rest.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">05</span> Do you offer revisions? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes — every engagement includes revision rounds to make sure the final output matches your vision and goals.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span class="n">06</span> How do I get started? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Fill out the contact form below or email me directly at anshkataria525@gmail.com — I'll get back to you within 24 hours.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-section">
+    <div class="circle-badge contact-badge">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="badgeCircle2" d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"/></defs>
+        <text class="badge-text"><textPath href="#badgeCircle2" textLength="276" lengthAdjust="spacing">OPEN FOR WORK&#160;•&#160;OPEN FOR WORK&#160;•</textPath></text>
+      </svg>
+      <span class="badge-core">↗</span>
+    </div>
+    <div class="hi-bubble2">
+      <span class="swap-item swap-a">Hi</span>
+      <span class="swap-item swap-b"><span class="wave wave-black">👋</span></span>
+    </div>
+    <div class="eyebrow">Finale · Let's Work Together</div>
+    <h2 class="display" data-serif="3" style="max-width:820px;">Let's build something impactful together.</h2>
+    <div class="avail-badge">Open to Freelance, Consulting &amp; AI Product Collaborations</div>
+
+    <div class="contact-grid">
+      <form class="form">
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required>
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com" required>
+        <label>Service Needed?</label>
+        <select>
+          <option>Select...</option>
+          <option>AI Marketing Strategy</option>
+          <option>Performance Marketing</option>
+          <option>Search Optimization</option>
+          <option>Website Development</option>
+          <option>AI Automation</option>
+          <option>Branding &amp; Content</option>
+        </select>
+        <label>Message</label>
+        <textarea rows="3" placeholder="What can I help you with?"></textarea>
+        <button type="submit" class="btn" style="margin-top:10px;">Submit <span class="arrow">↗</span></button>
+      </form>
+
+      <div class="contact-side">
+        <div class="item"><span>Email</span><b>anshkataria525@gmail.com</b></div>
+        <div class="item"><span>Call Today</span><b>+91 98123 05772</b></div>
+        <div class="item"><span>Location</span><b>Gurugram, Haryana, India</b></div>
+        <div class="item"><span>Website</span><b>sparqera.com</b></div>
+        <div class="item">
+          <span>Social</span>
+          <div class="social-row">
+            <a href="https://linkedin.com/in/divyansh-kataria-9316341b9" target="_blank" rel="noopener">in</a>
+            <a href="mailto:anshkataria525@gmail.com">@</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Divyansh Kataria. All Rights Reserved. &nbsp;·&nbsp; <a href="mailto:anshkataria525@gmail.com">anshkataria525@gmail.com</a>
+  </footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
