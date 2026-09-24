@@ -386,7 +386,7 @@ if (FINE && !REDUCE) {
   };
 
   // Delegated — two listeners total instead of one pair per element.
-  const HOT = 'a, button, .faq-q, .toggle, input, textarea, select, .product-card, .featured-product, .skill-card';
+  const HOT = 'a, button, .faq-q, input, textarea, select, .product-card, .featured-product, .skill-card, .design-card';
   document.addEventListener('pointerover', (e) => {
     if (e.target.closest(HOT)) document.body.classList.add('cursor-hot');
   });
@@ -761,6 +761,28 @@ ScrollTrigger.batch('.product-card', {
     { opacity: 1, y: 0, rotateX: 0, stagger: 0.12, duration: 0.95, ease: 'power4.out', overwrite: true }),
 });
 
+ScrollTrigger.batch('.design-card', {
+  start: 'top 85%', once: true,
+  onEnter: (els) => gsap.fromTo(els, { opacity: 0, y: 60 },
+    { opacity: 1, y: 0, stagger: 0.1, duration: 0.9, ease: 'power4.out', overwrite: true }),
+});
+
+/* The card specimens (chart bars, drawing path, tile sequence) are CSS
+   keyframes. Gate them on a class so they only run while the section is
+   actually on screen — an infinite animation ticking out of view is the
+   kind of thing that quietly costs frames elsewhere on the page. */
+{
+  const grid = document.querySelector('.design-grid');
+  if (grid && !REDUCE) {
+    ScrollTrigger.create({
+      trigger: '#design',
+      start: 'top 90%',
+      end: 'bottom 10%',
+      onToggle: (self) => grid.classList.toggle('active', self.isActive),
+    });
+  }
+}
+
 ScrollTrigger.batch('.skill-card', {
   start: 'top 85%', once: true,
   onEnter: (els) => els.forEach((card, i) => {
@@ -820,7 +842,7 @@ ScrollTrigger.batch('.stat', {
    Custom properties are written at most once per frame, and only for
    the card actually under the pointer. ---------- */
 if (FINE && !REDUCE) {
-  const SPOT = '.product-card, .featured-product, .skill-card, .project-card, .service-row';
+  const SPOT = '.product-card, .featured-product, .skill-card, .project-card, .service-row, .design-card';
   let spotEl = null, spotX = 0, spotY = 0, spotQueued = false;
 
   document.addEventListener('pointermove', (e) => {
